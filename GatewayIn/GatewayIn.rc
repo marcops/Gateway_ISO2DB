@@ -1,0 +1,191 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GTWININTERFACE DIALOGEX 0, 0, 240, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GatewayIn"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,180,60,50,14
+    GROUPBOX        "Statistic",IDC_STATIC,7,7,167,71
+    LTEXT           "Transaction OUT:",IDC_STATIC,14,54,53,8
+    LTEXT           "Transaction IN:",IDC_STATIC,14,36,53,8
+    EDITTEXT        IDC_TPSIN,77,36,53,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TPSOUT,77,54,53,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Config",IDC_CONFIG,180,12,50,14
+    LISTBOX         IDC_LISTLOG,6,99,228,84,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Log",IDC_STATIC,9,87,12,8
+    LTEXT           "Nº Process:",IDC_STATIC,13,19,53,8
+    EDITTEXT        IDC_NPROC,77,19,53,12,ES_AUTOHSCROLL
+END
+
+IDD_LISTPROCESS DIALOGEX 0, 0, 205, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "List Process"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,164,50,14
+    PUSHBUTTON      "Add",IDC_ADDPROCESS,148,7,50,14
+    PUSHBUTTON      "Edit",IDC_EDITPROCESS,148,25,50,14
+    PUSHBUTTON      "Remove",IDC_REMPROCESS,148,43,50,14
+    LISTBOX         IDC_LIST1,7,7,120,139,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROCESSCONFIG DIALOGEX 0, 0, 268, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Process Config"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,168,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,168,50,14
+    LTEXT           "Tag",IDC_STATIC,7,6,13,8
+    EDITTEXT        IDC_TAG,30,6,54,14,ES_AUTOHSCROLL
+    LTEXT           "Table",IDC_STATIC,7,24,18,8
+    EDITTEXT        IDC_EDIT2,30,24,54,14,ES_AUTOHSCROLL
+    LTEXT           "Process Code:",IDC_STATIC,96,24,47,8
+    EDITTEXT        IDC_EDIT3,150,24,54,14,ES_AUTOHSCROLL
+    LTEXT           "Message Class:",IDC_STATIC,96,6,50,8
+    EDITTEXT        IDC_EDIT4,150,6,54,14,ES_AUTOHSCROLL
+    GROUPBOX        "Bit Map",IDC_STATIC,6,60,258,102
+    LTEXT           "Bit",IDC_STATIC,12,72,9,8
+    EDITTEXT        IDC_EDIT5,24,72,54,14,ES_AUTOHSCROLL
+    LTEXT           "Sql Row",IDC_STATIC,84,72,26,8
+    EDITTEXT        IDC_EDIT6,114,72,54,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Insert",IDC_BUTTON1,204,90,50,14
+    LISTBOX         IDC_LIST1,12,90,186,66,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "S. Procedure:",IDC_STATIC,97,43,45,8
+    EDITTEXT        IDC_EDIT7,150,42,54,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Edit",IDC_BUTTON2,204,108,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON3,204,126,50,14
+    LTEXT           "Type",IDC_STATIC,174,72,17,8
+    COMBOBOX        IDC_TYPE,198,72,54,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GTWININTERFACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_LISTPROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_PROCESSCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SERVER              ICON                    "server.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROCESSCONFIG DLGINIT
+BEGIN
+    IDC_TYPE, 0x403, 6, 0
+0x6e49, 0x7570, 0x0074, 
+    IDC_TYPE, 0x403, 7, 0
+0x754f, 0x7074, 0x7475, "\000" 
+    IDC_TYPE, 0x403, 12, 0
+0x6e49, 0x7570, 0x4f74, 0x7475, 0x7570, 0x0074, 
+    0
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

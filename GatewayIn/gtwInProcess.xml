@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--
+TYPE sql
+Unknown = 0,
+Input = 1,
+Output = 2,
+InputOutput = 3,
+ReturnValue = 4
+ -->
+<GatewayIn>
+	<Proc>
+		<Process>
+			<Tag>process_name</Tag>
+			<Table>table_name</Table>
+			<MessageClass>0200</MessageClass>
+			<ProcessCode>002020</ProcessCode>
+			<StoredProcedure>procedure_call</StoredProcedure>
+			<BitRows>
+				<BitRow>
+					<Bit>3</Bit>
+					<SqlRow>s_3</SqlRow>
+					<SqlType>3</SqlType>
+				</BitRow>
+				<BitRow>
+					<Bit>7</Bit>
+					<SqlRow>s_7</SqlRow>
+					<SqlType>3</SqlType>
+				</BitRow>
+			</BitRows>
+		</Process>
+	</Proc>
+</GatewayIn>
